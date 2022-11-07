@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\InventoryController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -24,11 +25,18 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+
 // category
 Route::get('/category',[CategoryController::class,'index']);
 
 // product
 Route::get('/product',[ProductController::class,'index']);
 Route::post('/product',[ProductController::class,'create']);
+
+
+// inventory
+Route::get('/inventory',[InventoryController::class,'index']);
+Route::post('/inventory',[InventoryController::class,'create']);
+
 
 

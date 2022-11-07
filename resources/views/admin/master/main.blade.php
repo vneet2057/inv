@@ -27,6 +27,9 @@
                         <a class="nav-link" href="/product">Product</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/inventory">Inventory</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Stock in</a>
                     </li>
                     <li class="nav-item">

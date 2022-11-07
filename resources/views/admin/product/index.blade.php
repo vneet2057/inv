@@ -7,7 +7,7 @@
         <div class="form-group">
             <label for="">Catgory</label>
             <select id="" class="form-control" name="category_id">
-                <option >Select</option>
+                <option>Select</option>
                 @foreach($category as $cat)
                 <option value="{{$cat->id}}">{{$cat->name}}</option>
                 @endforeach
@@ -54,10 +54,23 @@
             <th>unit</th>
             <th>sp</th>
             <th>cp</th>
+            <th>stock</th>
+
             <th>Action</th>
         </thead>
         <tbody>
-           
+            @foreach($product as $prod)
+            <tr>
+                <td>{{$prod->name}}</td>
+                <td>{{$prod->name}}</td>
+                <td>{{$prod->name}}</td>
+                <td>{{$prod->name}}</td>
+                <td>{{$prod->name}}</td>
+                <td>{{$prod->stock}}</td>
+                <td>{{$prod->name}}</td>
+
+            </tr>
+            @endforeach
 
         </tbody>
     </table>

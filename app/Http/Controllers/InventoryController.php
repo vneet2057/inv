@@ -11,7 +11,8 @@ class InventoryController extends Controller
     function index()
     {
         $product = Product::all();
-        return view('admin.inventory.index',compact('product'));
+        $inventory = Inventory::all();
+        return view('admin.inventory.index',compact('product','inventory'));
     }
 
     function create(Request $request)

@@ -27,19 +27,23 @@
                         <a class="nav-link" href="/product">Product</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/inventory">Inventory</a>
+                        <a class="nav-link" href="/inventory">Inventory Adjustment</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Stock in</a>
+                        <a class="nav-link" href="/vendor">Vendor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/stock-in">Stock in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Customer</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Stock out</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+
+                <button class="btn btn-outline-success" type="submit">POS</button>
             </div>
         </div>
     </nav>

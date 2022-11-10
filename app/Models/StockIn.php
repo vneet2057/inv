@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class StockIn extends Model
 {
     use HasFactory;
+
+    public function vendor()
+    {
+        return $this->belongsTo(vendor::class);
+    }
 }

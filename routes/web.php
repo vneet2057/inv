@@ -54,5 +54,11 @@ Route::post('/stock-in/crate',[StockInController::class,'index']);
 // add stock item 
 Route::post('/add-stock-in-item',[StockInController::class,'addItem']);
 
+// get items
+Route::get('/get-stock-in-items/{id}',[StockInController::class,'getItems']);
+
+// create bill
+Route::post('/create-bill/{id}',[StockInController::class,'createBill']);
+
 
 
